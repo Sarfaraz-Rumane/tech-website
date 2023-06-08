@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+ 
+    display: flex;
+    height: 68px;
+    position: sticky;
+    top: 0;
+   
+   
+}
+.nav-list{
+ /* background-color: rgb(0, 0, 0); */
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 0px 51px;
+    
+}
+.nav-list li a{
+   
+    text-decoration: none;
+color: aliceblue;
+font-size: 20px;
+}
+.nav-list li a:hover{
+ color: grey;
+ cursor: pointer;
+}
+.logo{
+    padding: 0 0 0 17px;
+}
+.logo img{
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 24px;
+}
+.rightnav{
+    /* background-color: rgb(32, 179, 172); */
+    width: 30%;
+    text-align: right;
+    margin-right: 37px;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -80px 0 325px;
+    display: inline-grid;
+}
+
+#search{
+    padding: 3px 21px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 9vw;
+
+}
+.btn-sm{
+    padding: 2px 0px;
+    margin: 2px 17px 0 53px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: aliceblue;
+    cursor: pointer;
+    width: 4vw;
+}
+
+.background{
+background: rgba(0, 0, 0, 0.7) url('./img/BG-building.jpg');
+background-size: cover;
+background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 54%;
+    margin: auto;
+    height: 73%;
+}
+.firstsection{
+    height: 100vh;
+}
+/* .firsthalf{
+    width: 70%;
+} */
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 88%;
+    border: 2px solid white;
+    border-radius: 83px;
+display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 41px;
+}
+.text-small{
+    font-size: 25px;
+}
+
+.btn{
+    padding:8px 20px ;
+    margin: 7px 20px 0 0 ;
+    border: 2px solid white;
+    border-radius:8px ;
+    background: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.secright{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.para{
+    padding: 0 65px;
+}
+.sectionsubtag{
+    font-size: 20px;
+}
+
+.secleft{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+hr{
+    width: 90%;
+    margin: 0 0 0 85px;
+}
+
+
+.contact{
+    background-color: rgb(255 249 240);
+        height: 60vh;
+    padding: 60px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 82px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container input[type="text"],
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .container textarea {
+    height: 120px;
+  }
+  
+  .container input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+
+.burger{
+display: none;
+position: absolute;
+cursor: pointer;
+right: 53px;
+top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+
+}
+
+
+
+
+
+  @media only screen  and (max-width: 1240px){
+    .burger{
+display: block;
+    }
+.nav-list{
+    flex-direction: column;
+    margin: 7px 182px;
+}
+
+.rightnav {
+
+    margin: auto; 
+
+}
+.btn-sm{
+width: 4vw;
+width: 6vw;
+margin: auto;
+}
+
+.navbar{
+   height: 226px;
+transition: all 0.7s ease-out;
+    flex-direction: column;
+}
+.h-nav{
+    height: 72px;
+}
+.v-class{
+    opacity: 0;
+}
+    
+}
